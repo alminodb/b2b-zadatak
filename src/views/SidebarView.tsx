@@ -29,12 +29,12 @@ const SidebarView: React.FC = () => {
         <div className='flex flex-col flex-1 h-screen bg-gray-200'>
             <div className='flex-1 p-3 border-b-2 border-gray-400'>
                 {inactiveColumns && inactiveColumns.map((inactive: Column, index: number) =>
-                    <div className='sidebar-item sidebar-item__red' key={index} onDoubleClick={() => handleAddColumn(inactive)}>{inactive.naziv}</div>
+                    <div className='sidebar-item sidebar-item__red' key={index} onDoubleClick={() => handleAddColumn(inactive)}>{inactive.naziv.charAt(0).toUpperCase() + inactive.naziv.slice(1)}</div>
                 )}
             </div>
             <div className='flex-1 p-3'>
                 {activeColumns && activeColumns.map((active: Column, index: number) =>
-                    <div className='sidebar-item sidebar-item__green' key={index} onDoubleClick={() => handleRemoveColumn(active)}>{active.naziv}</div>
+                    <div className='sidebar-item sidebar-item__green' key={index} onDoubleClick={() => handleRemoveColumn(active)}>{active.naziv.charAt(0).toUpperCase() + active.naziv.slice(1)}</div>
                 )}
             </div>
         </div>
