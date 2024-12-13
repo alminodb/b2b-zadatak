@@ -6,6 +6,15 @@
   margin: 0;
 }
 
+.dx-datagrid .dx-row:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.dx-datagrid .dx-datagrid-headers .dx-header-row {
+  color: black;
+  font-weight: bold;
+}
+
 .sidebar-item {
   border-width: 2px;
   padding: 4px;
