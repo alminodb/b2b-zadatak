@@ -8,5 +8,16 @@
 git clone https://github.com/alminodb/b2b-zadatak.git
 cd b2b-zadatak
 npm install
-npm start
+```
+
+### Pokretanje lokalno
+
+```bash
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
 ```
