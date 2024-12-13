@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+}
+
+.sidebar-item {
+  border-width: 2px;
+  padding: 4px;
+  user-select: none;
+  margin-bottom: 5px;
+
+  &&:hover {
+    cursor: pointer;
+  }
+}
+
+.sidebar-item__red {
+  border-color: red;
+}
+
+.sidebar-item__green {
+  border-color: green;
+}
