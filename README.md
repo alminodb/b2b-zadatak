@@ -1,6 +1,7 @@
 # B2B - zadatak
 
 **Zadatak je uradjen koristeci React Typescript, DevExtreme DataGrid, ChakraUI, Tailwind**
+
 **U kodu se nalaze komentari koji ukratko objasnjavaju sta i kako je radjeno**
 
 ### Instalacija
