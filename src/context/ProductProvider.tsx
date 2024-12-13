@@ -51,12 +51,12 @@ const ProductProvider: React.FC<ProductProviderProps> = ({ children }) => {
             const cols: Column[] = data.map((co: string, index: number) => { return { "naziv": co, "index": index } }); // dodjeljuje svakom elementu index kako bi se kasnije kolone mogle sortirati (npr. da id uvijek bude prva kolona)
             setColumns(cols);
 
-            // svaki put kada se program otvori odaberu se prve tri kolone za prikaz (id, klasifikacija, naziv), a ostale bivaju u sidebaru kao opcija za prikazivanje
-            const active = cols.filter((_c: Column, index: number) => index < 3);
+            // svaki put kada se program otvori odabere se prvih 5 kolona za prikaz (id, klasifikacija, naziv, karakteristikaA, karakteristikaB), a ostale bivaju u sidebaru kao opcija za prikazivanje
+            const active = cols.filter((_c: Column, index: number) => index < 5);
             setActiveColumns(active);
 
-            // u neaktivne smijestamo preostale kolone (index veci od 2)
-            const inactive = cols.filter((_c: Column, index: number) => index >= 3);
+            // u neaktivne smijestamo preostale kolone (index veci od 4)
+            const inactive = cols.filter((_c: Column, index: number) => index >= 5);
             setInactiveColumns(inactive);
         } catch (e) {
             console.log(e);
